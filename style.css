@@ -180,7 +180,7 @@ body {
 }
 
 .header {
-  background-image: url(../../images/desktop/image-header.jpg);
+  background-image: url(./images/desktop/image-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -196,7 +196,7 @@ body {
 @media only screen and (max-width: 37.5em) {
   .header {
     padding: 20px 10px;
-    background-image: url(../../images/mobile/image-header.jpg);
+    background-image: url(./images/mobile/image-header.jpg);
   }
 }
 .header__cta {
