@@ -1,0 +1,16 @@
+{
+  "name": "sunnyside-agency-landing-page",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:sass": "sass sass/main.scss style.css --no-source-map",
+    "compress:css": "sass style.css style.min.css --style compressed --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.54.4",
+    "vite": "^2.9.9"
+  }
+}

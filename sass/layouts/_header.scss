@@ -1,0 +1,42 @@
+.header {
+    background-image: url(../../images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 20px 40px;
+    position: relative;
+
+    @include respond(phone) {
+        padding: 20px 10px;
+        background-image: url(../../images/mobile/image-header.jpg);
+    }
+
+    &__cta {
+        @include flex-column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        height: 60%;
+    }
+
+    &__title {
+        font-family: $font-family-fraunces;
+        letter-spacing: 5px;
+        font-size: 60px;
+        color: $White;
+        margin: 100px 0;
+        display: block;
+
+        @include respond(phone) {
+            padding-top: 80px;
+            font-size: 35px;
+            text-align: center;
+        }
+    }
+
+    &__scrollbtn {
+        margin-top: 20px;
+        padding: 20px 0;
+    }
+}

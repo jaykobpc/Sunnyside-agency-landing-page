@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="http-equiv" content="IE=edge" />
+    <meta name="author" content="jaykob_w" />
+    <meta name="theme-color" content="#3dbeff" />
+    <meta name="description" content="Challenge by frontend mentor" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon-32x32.png" />
+    <title>Sunny side Agency</title>
+  </head>
+  <body translate="no">
+    <main id="app" safe-area-view="auto">
+      <!-- header section -->
+      <section class="header" id="header" role="presentation">
+        <nav id="MobileNav" class="mobilenav" role="navigation">
+          <div class="mobilenav__wrapper">
+            <a href="#about" class="mobilenav__link">About</a>
+            <a href="#services" class="mobilenav__link">Services</a>
+            <a href="#projects" class="mobilenav__link">Projects</a>
+            <a href="#contact" class="mobilenav__linkbtn">Contact</a>
+          </div>
+        </nav>
+        <nav class="navbar" role="navigation">
+          <img src="./images/logo.svg" alt="Logo" draggable="false" class="navbar__logo">
+          <div class="navbar__listview">
+            <a href="#about" class="navbar__listview__item">About</a>
+            <a href="#services" class="navbar__listview__item">Services</a>
+            <a href="#projects" class="navbar__listview__item">Projects</a>
+            <a href="#contact" class="navbar__listview__linkbtn">Contact</a>
+          </div>
+          <div id="mobileMenu" class="navbar__mobilemenu">
+            <img src="./images/icon-hamburger.svg" alt="Hamburger Menu" draggable="false" class="navbar__mobilemenu__icon">
+          </div>
+        </nav>
+       <div class="header__cta">
+        <h3 class="header__title">WE ARE CREATIVES</h3>
+        <a href="#about" class="header__scrollbtn">
+          <img src="./images/icon-arrow-down.svg" alt="Arrow Down" draggable="false" class="header__scrollbtn__img">
+        </a>
+       </div>
+      </section>
+      <!-- Grid section -->
+      <section id="about" class="gridbox" role="presentation">
+        <div class="gridbox__lftbox">
+          <div class="gridbox__lftbox__textview">
+            <h3 class="gridbox__title">Transform your brand</h3>
+            <p class="gridbox__paragraph">
+              We are a full-service creative agency specializing in helping brands grow fast.
+              Engage your clients through compelling visuals that do most of the marketing for you.
+            </p>
+            <a href="#/" class="gridbox__lftbox__textview__linktext">Learn More</a>
+          </div>
+        </div>
+        <div class="gridbox__rtbox">
+          <img src="./images/desktop/image-transform.jpg"
+          srcset="./images/mobile/image-transform.jpg 375w, ./images/desktop/image-transform.jpg 1000w"
+          sizes="(max-width: 56.25em) 30vw, (max-width: 37.5em) 30vw, 300px"
+          alt="Image" draggable="false" class="gridbox__rtbox__img">
+        </div>
+      </section>
+      <!-- grid box 2-->
+      <section class="gridbox flex-col" role="presentation">
+        <div class="gridbox__rtbox">
+          <img src="./images/desktop/image-stand-out.jpg"
+          srcset="./images/mobile/image-stand-out.jpg 375w, ./images/desktop/image-stand-out.jpg 1000w"
+          sizes="(max-width: 56.25em) 30vw, (max-width: 37.5em) 30vw, 300px"
+          alt="Image" draggable="false" class="gridbox__rtbox__img">
+        </div>
+        <div class="gridbox__lftbox">
+          <div class="gridbox__lftbox__textview">
+            <h3 class="gridbox__title">Stand out to the right audience</h3>
+            <p class="gridbox__paragraph">
+              Using a collaborative formula of designers, researchers, photographers, videographers
+              and copyrighters, we'll build and extend your brand in digital places.
+            </p>
+            <a href="#/" class="gridbox__lftbox__textview__linktext pink-link">Learn More</a>
+          </div>
+        </div>
+      </section>
+      <!-- Grid box parallel -->
+      <section id="services" class="gridgroup" role="presentation">
+        <div class="gridgroup__gridleft">
+          <img src="./images/desktop/image-graphic-design.jpg" 
+        
+         
+          alt="Graphic design" class="gridgroup__img">
+          <div class="gridgroup__textview">
+            <h3>Graphic Design</h3>
+            <p>Graphic designs makes you memorable. We deliver artwork that underscores your
+              brand message and captures potential clients' attention.
+            </p>
+          </div>
+        </div>
+        <div class="gridgroup__gridright">
+          <img src="./images/desktop/image-photography.jpg"
+         
+         
+          alt="Photography" class="gridgroup__img">
+          <div class="gridgroup__textview">
+            <h3>Photography</h3>
+            <p>
+              Increase your credibility by getting the most stunning, hight quality photos
+              that improve your business image.
+            </p>
+          </div>  
+        </div>
+      </section>
+      <!-- client testimonials -->
+      <section class="testimonials" role="presentation">
+        <h2 class="testimonials__title">Client Testimonials</h2>
+        <div class="testimonials__wrapper">
+          <div class="testimonials__card">
+            <img src="./images/image-emily.jpg" draggable="false" alt="Emily">
+            <p>
+              We put our trust in Sunnyside and they delivered, making sure our needs
+              were met and deadlines were always hit.
+            </p>
+            <h3>Emily R.</h3>
+            <span>Marketing Director</span>
+          </div>
+          <div class="testimonials__card">
+            <img src="./images/image-thomas.jpg" draggable="false" alt="Thomas">
+            <p>
+             Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it
+             a satisfying and enjoyable experience.
+            </p>
+            <h3>Thomas S.</h3>
+            <span>Chief Operating Officer</span>
+          </div>
+          <div class="testimonials__card">
+            <img src="./images/image-jennie.jpg" draggable="false" alt="Jennie F.">
+            <p>
+              Incredible end result! Our sales increased over 400% when we worked
+              with Sunnyside. Highly recommeded!
+            </p>
+            <h3>Jennie F.</h3>
+            <span>Business Owner</span>
+          </div>
+        </div>
+      </section>
+      <!-- Gallery section -->
+      <section class="gallery" id="projects" role="presentation">
+        <img src="./images/desktop/image-gallery-milkbottles.jpg"
+        srcset="./images/mobile/image-gallery-milkbottles.jpg 375w, ./images/desktop/image-gallery-milkbottles.jpg 1000w"
+        sizes="(max-width: 375px) 30vw, (max-width: 375px) 30vw, 300px"
+        draggable="false" alt="Gallery">
+
+        <img src="./images/desktop/image-gallery-orange.jpg"
+        srcset="./images/mobile/image-gallery-orange.jpg 375w, ./images/desktop/image-gallery-orange.jpg 1000w"
+        sizes="(max-width: 375px) 30vw, (max-width: 375px) 30vw, 300px"
+        draggable="false" alt="Gallery">
+
+        <img src="./images/desktop/image-gallery-cone.jpg"
+        srcset="./images/mobile/image-gallery-cone.jpg 375w, ./images/desktop/image-gallery-cone.jpg 1000w"
+        sizes="(max-width: 375px) 30vw, (max-width: 375px) 30vw, 300px"
+        draggable="false" alt="Gallery">
+
+        <img src="./images/desktop/image-gallery-sugarcubes.jpg"
+        srcset="./images/mobile/image-gallery-sugar-cubes.jpg 375w, ./images/desktop/image-gallery-sugarcubes.jpg 1000w"
+        sizes="(max-width: 375px) 30vw, (max-width: 375px) 30vw, 300px"
+        draggable="false" alt="Gallery">
+      </section>
+      <!-- footer -->
+      <footer class="footer" id="contact" role="presentation">
+        <img src="./images/logo.svg" alt="Brand Logo" class="footer__logo">
+        <div class="footer__listitems">
+          <a href="#about" class="footer__listitems__link">About</a>
+          <a href="#services" class="footer__listitems__link">Services</a>
+          <a href="#projects" class="footer__listitems__link">Projects</a>
+        </div>
+        <div class="footer__linklist">
+          <a href="https://facebook.com" rel="noreferrer" target="_blank" class="footer__linklist__icon">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a href="https://instagram.com" rel="noreferrer" target="_blank" class="footer__linklist__icon">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com/jaykob_w" rel="noreferrer" target="_blank" class="footer__linklist__icon">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.pinterest.co.uk/" rel="noreferrer" target="_blank" class="footer__linklist__icon">
+            <i class="fa-brands fa-pinterest"></i>
+          </a>
+        </div>
+      </footer>
+      <!-- scrollfab -->
+      <a id="scrollFab" href="#header" class="scrollfab" role="button">
+        <i class="fa-solid fa-arrow-up-long"></i>
+      </a>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
